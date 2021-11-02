@@ -1,32 +1,22 @@
-This project requires Docker installation along with downloaded git repository from GitHub.
-To view the files inside repository, please select "master" branch.
+Make sure you have already installed both Docker Engine and Docker Compose. 
+-->Create a directory for the project:
 
-Build docker image using "Dockerfile" using below command:
-[Run command from same directory as Dockerfile]
+mkdir project-dir-name
 
-    docker build -t <image-name> .
+cd project-dir-name
     
-Check created image
+-->Make sure all three files are in project directory
 
-    docker images
+ assignmentAPI.py, Dockerfile and docker-compose.yml
     
-Run container
-
-    docker run -it <image-name> /bin/sh
+-->Start up application by running command from project directory:
+    docker-compose up
     
-Check running container
-
-    docker ps
-
-Start and run the service per "docker-compose.yml" file.
-
-[Run command from the same directory as file 'docker-compose.yml']
-
-    docker compose up
-
-use "ls" command to see the files
-
-Run Python script using
-
-    python assignmentAPI.py
-
+-->Enter http://localhost:8080 or http://localhost:8080/lang or http://localhost:8080/lang/<eg- Python> in browser to see the application running.
+    
+-->The APIs can also be tested using Postman by selecting the method and sending url.
+    
+-->Switch to another terminal window, and type "docker image ls" to list local images.
+    
+-->Stop application by running command "docker-compose down" in project directory or hit CTRL+C in terminal where you started the app.
+    
