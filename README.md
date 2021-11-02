@@ -2,21 +2,20 @@
 This project requires Docker installation along with downloaded git repository from GitHub.
 To view the files inside repository, please select "master" branch.
 
-Build docker image using "Dockerfile" using below command:
-[Run command from same directory as Dockerfile]
-    docker build -t <image-name> .
-Check created image
-    docker images
-Run container
-    docker run -it <image-name> /bin/sh
-Check running container
-    docker ps
+Build docker image using "Dockerfile" using command: docker build -t <image-name> .
 
-Start and run the service per "docker-compose.yml" file.
-[Run command from the same directory as file 'docker-compose.yml']
-    docker compose up
+[Note: Run command from same directory as Dockerfile]
+    
+Command to check created image: docker images
+    
+Command to Run container: docker run -it <image-name> /bin/sh
+    
+Command to check running container: docker ps
 
-use "ls" command to see the files
+Start and run the service per "docker-compose.yml" file: docker compose up
+    
+[Note: Run command from the same directory as file 'docker-compose.yml']
+    
+Use "ls" command to see the files
 
-Run Python script using
-    python assignmentAPI.py
+Command to run Python script: python assignmentAPI.py
