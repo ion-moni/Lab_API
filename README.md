@@ -28,5 +28,5 @@ use "ls" command to see the files
 
 Run Python script using
 
-    python main.py
+    python assignmentAPI.py
 
